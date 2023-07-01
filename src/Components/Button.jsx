@@ -4,6 +4,7 @@ const Button = ({ bgColor, width, paddingY, color, text }) => {
   return (
     <button
       type="submit"
+      aria-label={text}
       style={{
         backgroundColor: `${bgColor}`,
         width: `${width}`,

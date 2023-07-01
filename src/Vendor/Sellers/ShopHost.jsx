@@ -12,7 +12,6 @@ export const loader = ({ params }) => {
 
 const ShopHost = () => {
   const currentVendor = useLoaderData();
-
   // const newCurrentVendor = currentVendor.category.replace(/ /g, "-");
 
   const isActiveStyle = {
@@ -76,6 +75,7 @@ const ShopHost = () => {
       <div className="flex justify-between px-8 md:px-14 pt-6 capitalize text-lg text-black text-center">
         <NavLink
           to="."
+          aria-label="shop"
           end
           style={({ isActive }) => (isActive ? isActiveStyle : null)}
         >
@@ -83,12 +83,14 @@ const ShopHost = () => {
         </NavLink>
         <NavLink
           to="info"
+          aria-label="info"
           style={({ isActive }) => (isActive ? isActiveStyle : null)}
         >
           info
         </NavLink>
         <NavLink
           to="reviews"
+          aria-label="reviews"
           style={({ isActive }) => (isActive ? isActiveStyle : null)}
         >
           reviews

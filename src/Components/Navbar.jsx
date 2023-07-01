@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ leftIcon, rightIcon1, rightIcon2, text }) => {
   return (
-    <div className="flex justify-between items-center">
+    <nav className="flex justify-between items-center">
       <div className="text-2xl text-blue">{leftIcon}</div>
 
       <span className="text-xl text-black capitalize">{text}</span>
@@ -11,7 +11,7 @@ const Navbar = ({ leftIcon, rightIcon1, rightIcon2, text }) => {
         {rightIcon1}
         {rightIcon2}
       </div>
-    </div>
+    </nav>
   );
 };
 

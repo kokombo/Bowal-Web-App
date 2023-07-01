@@ -112,11 +112,13 @@ const Login = () => {
                   }`}
                 />
 
-                <div className="absolute right-5 top-4 text-xl text-bd-black">
-                  <div onClick={visibility}>
-                    {isVisibilityOn ? <MdVisibility /> : <MdVisibilityOff />}
-                  </div>
-                </div>
+                <button
+                  type="button"
+                  onClick={visibility}
+                  className="absolute right-5 top-4 text-xl text-bd-black"
+                >
+                  {isVisibilityOn ? <MdVisibility /> : <MdVisibilityOff />}
+                </button>
 
                 {errors?.password && (
                   <span className="text-red-500 text-sm">

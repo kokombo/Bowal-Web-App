@@ -63,11 +63,11 @@ export async function getVendors() {
   return vendorsArray;
 }
 
-export async function getVendor(id) {
+export const getVendor = async (id) => {
   const docRef = doc(db, "vendors", id);
   const vendorSnapshot = await getDoc(docRef);
   return {
     ...vendorSnapshot.data(),
     id: vendorSnapshot.id,
   };
-}
+};

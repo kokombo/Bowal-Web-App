@@ -8,7 +8,7 @@ const colors = {
 
 const Rating = ({ fontSize }) => {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-1">
       {[...Array(5)].map((_, index) => {
         return (
           <span key={index} style={{ fontSize: `${fontSize}` }}>
