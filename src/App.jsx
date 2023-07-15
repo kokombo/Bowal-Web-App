@@ -1,5 +1,8 @@
 import React from "react";
-import { Categories, Home, Main } from "./pages";
+// import { Categories, Home, Main } from "./pages";
+import Home from "./pages/Home";
+import Categories from "./pages/categories";
+import Main from "./Pages/Main";
 import { loader as categoriesLoader } from "./pages/categories";
 import { loader as homeLoader } from "./pages/Home";
 import {
