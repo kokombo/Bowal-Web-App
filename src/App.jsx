@@ -1,10 +1,10 @@
 import React from "react";
 // import { Categories, Home, Main } from "./pages";
-import Home from "./pages/Home";
-import Categories from "./pages/categories";
+import Home from "./Pages/Home";
+import Categories from "./Pages/categories";
 import Main from "./Pages/Main";
-import { loader as categoriesLoader } from "./pages/categories";
-import { loader as homeLoader } from "./pages/Home";
+import { loader as categoriesLoader } from "./Pages/categories";
+import { loader as homeLoader } from "./Pages/Home";
 import {
   Route,
   createRoutesFromElements,
