@@ -11,10 +11,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import MainLayout from "./layouts/MainLayout";
-import { Login, SignUp } from "./logins";
-import { action as loginAction } from "./logins/Login";
-import { action as signupAction } from "./logins/SignUp";
+import MainLayout from "./Layouts/MainLayout";
+import { Login, SignUp } from "./Logins";
+import { action as loginAction } from "./Logins/Login";
+import { action as signupAction } from "./Logins/SignUp";
 import { useGlobalContext } from "./Context/context";
 import { PreLoader, NotFound, ErrorBoundary } from "./Components";
 import RequireAuth from "./Firebase/RequireAuth";
