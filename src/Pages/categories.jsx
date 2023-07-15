@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { getCategories } from "../Firebase/firebase";
 import { Await, useLoaderData, defer, Link } from "react-router-dom";
 import { Navbar, PreLoader, SingleCategory } from "../Components";

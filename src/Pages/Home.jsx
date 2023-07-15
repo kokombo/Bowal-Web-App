@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { FaBars } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
 import { BsCart2 } from "react-icons/bs";

@@ -1,5 +1,5 @@
 import React from "react";
-import Rating from "../../components/Rating";
+import Rating from "../../Components/Rating";
 import CheckImage from "../../Components/CheckImage";
 
 const Reviews = () => {

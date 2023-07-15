@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { useLoaderData, Await, defer, useSearchParams } from "react-router-dom";
 import { getVendors } from "../Firebase/firebase";
 import { PreLoader, SingleBusiness } from "../Components";

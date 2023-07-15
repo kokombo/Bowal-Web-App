@@ -1,6 +1,6 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import SingleProduct from "../../components/SingleProduct";
+import SingleProduct from "../../Components/SingleProduct";
 
 const Shop = () => {
   const { currentVendor } = useOutletContext();
