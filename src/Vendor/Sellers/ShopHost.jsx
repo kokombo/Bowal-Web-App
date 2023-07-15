@@ -5,6 +5,7 @@ import { TbVectorTriangle } from "react-icons/tb";
 import { getVendor } from "../../Firebase/firebase";
 import { BsArrowLeft } from "react-icons/bs";
 import { checkImageUrl } from "../../Utilities";
+import CheckImage from "../../Components/CheckImage";
 
 export const loader = ({ params }) => {
   return getVendor(params.id);
@@ -34,6 +35,7 @@ const ShopHost = () => {
         <div className="absolute bottom-5 right-5">
           <SaveBusiness currentVendor={currentVendor} />
         </div>
+
         <div className="h-full w-full flex items-center justify-center bg-black">
           <img
             src={
@@ -48,17 +50,7 @@ const ShopHost = () => {
 
       <div className="py-5 px-2 flex justify-between items-center">
         <article className="flex items-center justify-center gap-3">
-          <div className="h-[65px] w-[65px] rounded-full flex items-center relative bg-black">
-            <img
-              src={
-                checkImageUrl(currentVendor.profilePicture)
-                  ? currentVendor.profilePicture
-                  : "https://i.ibb.co/TqsQ2Nj/logo1.png "
-              }
-              className="h-full w-full rounded-full border-none"
-            />
-          </div>
-
+          <CheckImage size="65" img={currentVendor.profilePicture} />
           <div className="capitalize max-w-[151px]">
             <h1 className="text-black text-xl font-semibold">
               {currentVendor.name}

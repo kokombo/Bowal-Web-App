@@ -34,13 +34,16 @@ const SaveBusiness = ({ currentVendor }) => {
   const existingIDs = savedBusinesses.map((savedBusiness) => savedBusiness.id);
 
   return (
-    <div className="bg-main-bg w-10 h-10 rounded-xl flex items-center justify-center text-2xl">
+    <button
+      type="button"
+      className="bg-main-bg w-10 h-10 rounded-xl flex items-center justify-center text-2xl"
+    >
       {existingIDs.includes(currentVendor.id) ? (
         <FcLike onClick={removeAVendor} />
       ) : (
         <FcLikePlaceholder onClick={saveAVendor} />
       )}
-    </div>
+    </button>
   );
 };
 
