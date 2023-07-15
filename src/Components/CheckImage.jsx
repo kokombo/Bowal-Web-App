@@ -3,7 +3,8 @@ import { checkImageUrl } from "../Utilities";
 const CheckImage = ({ img, size }) => {
   return (
     <div
-      className={`h-[${size}px] w-[${size}px] rounded-full flex items-center bg-black`}
+      className="rounded-full flex items-center bg-black"
+      style={{ height: `${size}px`, width: `${size}px` }}
     >
       <img
         src={checkImageUrl(img) ? img : "https://i.ibb.co/TqsQ2Nj/logo1.png "}
