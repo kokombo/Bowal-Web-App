@@ -34,21 +34,21 @@ const Categories = () => {
   };
 
   return (
-    <div className="m-4">
-      <Navbar
-        leftIcon={<FaBars onClick={openSidebar} />}
-        text="Categories"
-        rightIcon1={<BiSearch />}
-      />
+    <Suspense fallback={<PreLoader />}>
+      <div className="m-4">
+        <Navbar
+          leftIcon={<FaBars onClick={openSidebar} />}
+          text="Categories"
+          rightIcon1={<BiSearch />}
+        />
 
-      <div className="mt-8 md:mt-16">
-        <Suspense fallback={<PreLoader />}>
+        <div className="mt-8 md:mt-16">
           <Await resolve={getCategoriesPromise.categories}>
             {renderCategories}
           </Await>
-        </Suspense>
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
 
