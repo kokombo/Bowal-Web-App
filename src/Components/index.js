@@ -12,3 +12,5 @@ export { default as Rating } from "./Rating";
 export { default as Banner } from "./Banner";
 export { default as SaveBusiness } from "./SaveBusiness";
 export { default as RateABusiness } from "./RateABusiness";
+export { default as Search } from "./Search";
+export { default as CurrentUser } from "./CurrentUser";

@@ -30,7 +30,7 @@ const Banner = () => {
   const prevSlide = `-translate-x-full`;
 
   return (
-    <div className="flex relative flex-col gap-2 items-center overflow-hidden">
+    <div className="flex relative flex-col gap-2 items-center overflow-hidden border-[1px] border-gray-300">
       <div className="relative place-items-center w-full h-194 ">
         {banners.map((banner, bannerIndex) => {
           const { id, img } = banner;
