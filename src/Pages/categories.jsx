@@ -34,7 +34,7 @@ const Categories = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="m-4">
       <Navbar
         leftIcon={<FaBars onClick={openSidebar} />}
         text="Categories"

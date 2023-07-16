@@ -26,7 +26,7 @@ const HomeFeaturedVendors = () => {
   };
 
   return (
-    <section className="py-6 px-4">
+    <section className="my-6 mx-4">
       <h4 className="text-black text-lg font-bold">Featured Businesses</h4>
 
       <div className="mt-3">

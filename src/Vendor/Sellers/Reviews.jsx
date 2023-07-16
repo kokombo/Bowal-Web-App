@@ -14,7 +14,7 @@ const Reviews = () => {
         {[...Array(5)].map((_, index) => (
           <article key={index}>
             <article className="flex items-center justify-between">
-              <CheckImage size={50} />
+              <CheckImage size="50" />
               <article className="text-lg">
                 <p className="text-black">Micheal Johnny</p>
                 <p className="text-light-black">February 2, 2021</p>
@@ -22,7 +22,7 @@ const Reviews = () => {
               <Rating fontSize="18px" />
             </article>
             <article className="mt-4">
-              <p>
+              <p className="text-lg">
                 Your products are quality and durable. I enjoyed using them.
               </p>
             </article>

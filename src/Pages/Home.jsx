@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <Suspense fallback={<PreLoader />}>
-      <section className="p-4 flex flex-col gap-6 bg-main-bg">
+      <section className="m-4 flex flex-col gap-6 bg-main-bg">
         <div className="flex flex-col gap-6">
           <Navbar
             leftIcon={<FaBars onClick={openSidebar} />}

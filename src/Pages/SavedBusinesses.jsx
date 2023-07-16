@@ -9,7 +9,7 @@ const SavedBusinesses = () => {
   const { openSidebar } = useGlobalContext();
 
   return (
-    <section className="p-4 flex flex-col gap-6 bg-main-bg">
+    <section className="m-4 flex flex-col gap-6 bg-main-bg">
       <Navbar
         text="Saved Vendors"
         leftIcon={<FaBars onClick={openSidebar} />}
